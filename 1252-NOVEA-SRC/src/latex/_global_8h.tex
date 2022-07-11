@@ -1,0 +1,136 @@
+\hypertarget{_global_8h}{}\doxysection{Classes/\+Headers/\+Global.h File Reference}
+\label{_global_8h}\index{Classes/Headers/Global.h@{Classes/Headers/Global.h}}
+
+
+Copyright emkaelectronique.  
+
+
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}Util/\+C\+Screen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Util/\+C\+Std\+String.\+h\char`\"{}}\newline
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_global_8h_aeecb4ac0415e555d17a968eb1ddfbe24}\label{_global_8h_aeecb4ac0415e555d17a968eb1ddfbe24}} 
+typedef unsigned short int {\bfseries uint}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_global_8h_a037b11fec7b4085bb18307572d14b8fd}\label{_global_8h_a037b11fec7b4085bb18307572d14b8fd}} 
+enum {\bfseries E\+V\+T\+S\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+NS} \{ \newline
+{\bfseries D\+E\+T\+E\+C\+T\+I\+O\+N\+\_\+\+P\+R\+E\+S\+E\+N\+C\+E\+\_\+\+C\+A\+R\+T\+E\+\_\+\+OK} =2, 
+{\bfseries D\+E\+T\+E\+C\+T\+I\+O\+N\+\_\+\+P\+R\+E\+S\+E\+N\+C\+E\+\_\+\+C\+A\+R\+T\+E\+\_\+\+N\+OK}, 
+{\bfseries F\+L\+A\+S\+H\+\_\+\+Q\+R\+\_\+\+C\+O\+D\+E\+\_\+\+OK}, 
+{\bfseries F\+L\+A\+S\+H\+\_\+\+Q\+R\+\_\+\+C\+O\+D\+E\+\_\+\+N\+OK}, 
+\newline
+{\bfseries A\+L\+I\+M\+E\+N\+T\+A\+T\+I\+O\+N\+\_\+5\+V\+\_\+\+OK}, 
+{\bfseries A\+L\+I\+M\+E\+N\+T\+A\+T\+I\+O\+N\+\_\+5\+V\+\_\+\+N\+OK}, 
+{\bfseries P\+I\+N\+G\+\_\+\+C\+A\+N\+\_\+\+OK}, 
+{\bfseries P\+I\+N\+G\+\_\+\+C\+A\+N\+\_\+\+N\+OK}, 
+\newline
+{\bfseries E\+C\+R\+I\+T\+U\+R\+E\+\_\+\+N\+U\+M\+\_\+\+S\+E\+R\+I\+E\+\_\+\+OK}, 
+{\bfseries E\+C\+R\+I\+T\+U\+R\+E\+\_\+\+N\+U\+M\+\_\+\+S\+E\+R\+I\+E\+\_\+\+N\+OK}, 
+{\bfseries R\+E\+L\+E\+C\+T\+U\+R\+E\+\_\+\+N\+U\+M\+\_\+\+S\+E\+R\+I\+E\+\_\+\+OK}, 
+{\bfseries R\+E\+L\+E\+C\+T\+U\+R\+E\+\_\+\+N\+U\+M\+\_\+\+S\+E\+R\+I\+E\+\_\+\+N\+OK}, 
+\newline
+{\bfseries L\+E\+C\+T\+U\+R\+E\+\_\+\+U\+U\+I\+\_\+\+OK}, 
+{\bfseries L\+E\+C\+T\+U\+R\+E\+\_\+\+U\+U\+I\+\_\+\+N\+OK}, 
+{\bfseries P\+I\+N\+G\+\_\+\+M\+E\+M\+\_\+\+F\+L\+A\+S\+H\+\_\+\+OK}, 
+{\bfseries P\+I\+N\+G\+\_\+\+M\+E\+M\+\_\+\+F\+L\+A\+S\+H\+\_\+\+N\+OK}, 
+\newline
+{\bfseries L\+O\+R\+A\+\_\+\+A\+C\+T\+I\+V\+A\+T\+I\+O\+N\+\_\+\+E\+M\+E\+T\+T\+E\+U\+R\+\_\+\+OK}, 
+{\bfseries L\+O\+R\+A\+\_\+\+A\+C\+T\+I\+V\+A\+T\+I\+O\+N\+\_\+\+E\+M\+E\+T\+T\+E\+U\+R\+\_\+\+N\+OK}, 
+{\bfseries L\+O\+R\+A\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+P\+U\+I\+S\+S\+A\+N\+C\+E\+\_\+\+OK}, 
+{\bfseries L\+O\+R\+A\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+P\+U\+I\+S\+S\+A\+N\+C\+E\+\_\+\+N\+OK}, 
+\newline
+{\bfseries L\+O\+R\+A\+\_\+\+C\+O\+M\+P\+A\+R\+A\+I\+S\+O\+N\+\_\+\+F\+O\+R\+M\+E\+\_\+\+O\+N\+D\+E\+\_\+\+OK}, 
+{\bfseries L\+O\+R\+A\+\_\+\+C\+O\+M\+P\+A\+R\+A\+I\+S\+O\+N\+\_\+\+F\+O\+R\+M\+E\+\_\+\+O\+N\+D\+E\+\_\+\+N\+OK}, 
+{\bfseries B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+A\+C\+T\+I\+V\+A\+T\+I\+O\+N\+\_\+\+E\+M\+I\+S\+S\+I\+O\+N\+\_\+\+E\+S\+P32\+\_\+\+OK}, 
+{\bfseries B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+A\+C\+T\+I\+V\+A\+T\+I\+O\+N\+\_\+\+E\+M\+I\+S\+S\+I\+O\+N\+\_\+\+E\+S\+P32\+\_\+\+N\+OK}, 
+\newline
+{\bfseries B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+P\+U\+I\+S\+S\+A\+N\+C\+E\+\_\+\+OK}, 
+{\bfseries B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+P\+U\+I\+S\+S\+A\+N\+C\+E\+\_\+\+N\+OK}, 
+{\bfseries B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+C\+O\+M\+P\+A\+R\+A\+I\+S\+O\+N\+\_\+\+F\+O\+R\+M\+E\+\_\+\+O\+N\+D\+E\+\_\+\+OK}, 
+{\bfseries B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+C\+O\+M\+P\+A\+R\+A\+I\+S\+O\+N\+\_\+\+F\+O\+R\+M\+E\+\_\+\+O\+N\+D\+E\+\_\+\+N\+OK}, 
+\newline
+{\bfseries A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+R\+E\+\_\+\+P\+I\+N\+G\+\_\+\+I2\+C\+\_\+\+OK}, 
+{\bfseries A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+R\+E\+\_\+\+P\+I\+N\+G\+\_\+\+I2\+C\+\_\+\+N\+OK}, 
+{\bfseries A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+R\+E\+\_\+\+L\+E\+C\+T\+U\+R\+E\+\_\+\+V\+A\+L\+E\+U\+R\+\_\+\+F\+A\+B\+R\+I\+C\+A\+N\+T\+\_\+\+OK}, 
+{\bfseries A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+R\+E\+\_\+\+L\+E\+C\+T\+U\+R\+E\+\_\+\+V\+A\+L\+E\+U\+R\+\_\+\+F\+A\+B\+R\+I\+C\+A\+N\+T\+\_\+\+N\+OK}, 
+\newline
+{\bfseries A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+R\+E\+\_\+\+C\+A\+L\+I\+B\+R\+A\+T\+I\+O\+N\+\_\+\+OK}, 
+{\bfseries A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+R\+E\+\_\+\+C\+A\+L\+I\+B\+R\+A\+T\+I\+O\+N\+\_\+\+N\+OK}, 
+{\bfseries A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+R\+E\+\_\+\+T\+E\+S\+T\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+I\+O\+N\+\_\+\+OK}, 
+{\bfseries A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+R\+E\+\_\+\+T\+E\+S\+T\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+I\+O\+N\+\_\+\+N\+OK}, 
+\newline
+{\bfseries L\+E\+D\+\_\+\+R\+G\+B\+\_\+\+R\+\_\+\+OK}, 
+{\bfseries L\+E\+D\+\_\+\+R\+G\+B\+\_\+\+R\+\_\+\+N\+OK}, 
+{\bfseries L\+E\+D\+\_\+\+R\+G\+B\+\_\+\+G\+\_\+\+OK}, 
+{\bfseries L\+E\+D\+\_\+\+R\+G\+B\+\_\+\+G\+\_\+\+N\+OK}, 
+\newline
+{\bfseries L\+E\+D\+\_\+\+R\+G\+B\+\_\+\+B\+\_\+\+OK}, 
+{\bfseries L\+E\+D\+\_\+\+R\+G\+B\+\_\+\+B\+\_\+\+N\+OK}, 
+{\bfseries L\+U\+X\+M\+E\+T\+R\+E\+\_\+\+P\+I\+N\+G\+\_\+\+I2\+C\+\_\+\+OK}, 
+{\bfseries L\+U\+X\+M\+E\+T\+R\+E\+\_\+\+P\+I\+N\+G\+\_\+\+I2\+C\+\_\+\+N\+OK}, 
+\newline
+{\bfseries L\+U\+X\+M\+E\+T\+R\+E\+\_\+\+C\+A\+L\+I\+B\+R\+A\+T\+I\+O\+N\+\_\+\+OK}, 
+{\bfseries L\+U\+X\+M\+E\+T\+R\+E\+\_\+\+C\+A\+L\+I\+B\+R\+A\+T\+I\+O\+N\+\_\+\+N\+OK}, 
+{\bfseries L\+U\+X\+M\+E\+T\+R\+E\+\_\+\+L\+E\+C\+T\+U\+R\+E\+\_\+\+V\+A\+L\+E\+U\+R\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+OK}, 
+{\bfseries L\+U\+X\+M\+E\+T\+R\+E\+\_\+\+L\+E\+C\+T\+U\+R\+E\+\_\+\+V\+A\+L\+E\+U\+R\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+N\+OK}, 
+\newline
+{\bfseries C\+O\+N\+S\+O\+M\+M\+A\+T\+I\+O\+N\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+S\+O\+U\+S\+\_\+5\+V\+\_\+\+OK}, 
+{\bfseries C\+O\+N\+S\+O\+M\+M\+A\+T\+I\+O\+N\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+S\+O\+U\+S\+\_\+5\+V\+\_\+\+N\+OK}, 
+{\bfseries A\+L\+I\+M\+\_\+\+S\+E\+C\+O\+U\+R\+S\+\_\+30\+V\+\_\+\+OK}, 
+{\bfseries A\+L\+I\+M\+\_\+\+S\+E\+C\+O\+U\+R\+S\+\_\+30\+V\+\_\+\+N\+OK}, 
+\newline
+{\bfseries A\+L\+I\+M\+\_\+\+S\+E\+C\+O\+U\+R\+S\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+H\+A\+U\+S\+S\+E\+\_\+\+A\+L\+I\+M\+\_\+\+OK}, 
+{\bfseries A\+L\+I\+M\+\_\+\+S\+E\+C\+O\+U\+R\+S\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+H\+A\+U\+S\+S\+E\+\_\+\+A\+L\+I\+M\+\_\+\+N\+OK}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Copyright emkaelectronique. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Created on\+: 16 juin 2022 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+hme
+\end{DoxyAuthor}
+à compléter
+
+\begin{DoxyVerb}* ===================================================================
+*                 ##### Client et projet #####
+* ===================================.================================
+* 
+*        (#) Client    : NOVEA
+*        (#) Projet    : BANC DE TEST NOVCOM Z
+*        (#) Référence : BC 1252 002 000 800
+* ===================================================================
+*                 ##### Cible, compilateur et IDE #####
+* ===================================================================
+* 
+*        (#) Cible        : Raspberry V4
+*        (#) Compilateur  : g++
+*        (#) IDE          : Eclipse Papyrus - Decembre 2012 - Plugin CDT 
+*
+* ===================================================================
+*                 ##### Historique des modifications #####
+* ===================================================================
+* 
+*        (#) Version   | Date           | Auteur              | Nature de la modification
+*            1.00        29/03/2022     H. MEGHOUACHE         Creation
+*
+* \end{DoxyVerb}
+
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\doxysubsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+HT 2020 emka\+E\+L\+E\+C\+T\+R\+O\+N\+I\+Q\+UE \end{center} }

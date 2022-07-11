@@ -1,0 +1,103 @@
+\hypertarget{class_ti_xml_declaration}{}\doxysection{Ti\+Xml\+Declaration Class Reference}
+\label{class_ti_xml_declaration}\index{TiXmlDeclaration@{TiXmlDeclaration}}
+
+
+{\ttfamily \#include $<$tinyxml.\+h$>$}
+
+Inheritance diagram for Ti\+Xml\+Declaration\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_ti_xml_declaration}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ti_xml_declaration_aa0484d059bea0ea1acb47c9094382d79}\label{class_ti_xml_declaration_aa0484d059bea0ea1acb47c9094382d79}} 
+\mbox{\hyperlink{class_ti_xml_declaration_aa0484d059bea0ea1acb47c9094382d79}{Ti\+Xml\+Declaration}} ()
+\begin{DoxyCompactList}\small\item\em Construct an empty declaration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ti_xml_declaration_a3b618d1c30c25e4b7a71f31a595ee298}\label{class_ti_xml_declaration_a3b618d1c30c25e4b7a71f31a595ee298}} 
+\mbox{\hyperlink{class_ti_xml_declaration_a3b618d1c30c25e4b7a71f31a595ee298}{Ti\+Xml\+Declaration}} (const char $\ast$\+\_\+version, const char $\ast$\+\_\+encoding, const char $\ast$\+\_\+standalone)
+\begin{DoxyCompactList}\small\item\em Construct. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ti_xml_declaration_a58ac9042c342f7845c8491da0bb091e8}\label{class_ti_xml_declaration_a58ac9042c342f7845c8491da0bb091e8}} 
+{\bfseries Ti\+Xml\+Declaration} (const \mbox{\hyperlink{class_ti_xml_declaration}{Ti\+Xml\+Declaration}} \&copy)
+\item 
+\mbox{\Hypertarget{class_ti_xml_declaration_a4d6de9b630144621a1d36f31e449bd46}\label{class_ti_xml_declaration_a4d6de9b630144621a1d36f31e449bd46}} 
+\mbox{\hyperlink{class_ti_xml_declaration}{Ti\+Xml\+Declaration}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_ti_xml_declaration}{Ti\+Xml\+Declaration}} \&copy)
+\item 
+\mbox{\Hypertarget{class_ti_xml_declaration_a95cdcb9354ea220065bd378ffcacc7bd}\label{class_ti_xml_declaration_a95cdcb9354ea220065bd378ffcacc7bd}} 
+const char $\ast$ \mbox{\hyperlink{class_ti_xml_declaration_a95cdcb9354ea220065bd378ffcacc7bd}{Version}} () const
+\begin{DoxyCompactList}\small\item\em Version. Will return an empty string if none was found. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ti_xml_declaration_a8d3d1b5b226daa8353276d719497be80}\label{class_ti_xml_declaration_a8d3d1b5b226daa8353276d719497be80}} 
+const char $\ast$ \mbox{\hyperlink{class_ti_xml_declaration_a8d3d1b5b226daa8353276d719497be80}{Encoding}} () const
+\begin{DoxyCompactList}\small\item\em Encoding. Will return an empty string if none was found. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ti_xml_declaration_a1f2f8a741593d15a61e491e5024cacef}\label{class_ti_xml_declaration_a1f2f8a741593d15a61e491e5024cacef}} 
+const char $\ast$ \mbox{\hyperlink{class_ti_xml_declaration_a1f2f8a741593d15a61e491e5024cacef}{Standalone}} () const
+\begin{DoxyCompactList}\small\item\em Is this a standalone document? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ti_xml_declaration_a71d6bb3e09426fe63b02745857cd9dd2}\label{class_ti_xml_declaration_a71d6bb3e09426fe63b02745857cd9dd2}} 
+virtual \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} $\ast$ \mbox{\hyperlink{class_ti_xml_declaration_a71d6bb3e09426fe63b02745857cd9dd2}{Clone}} () const
+\begin{DoxyCompactList}\small\item\em Creates a copy of this Declaration and returns it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ti_xml_declaration_a97deab8fd263f70a72369d0214b5c789}\label{class_ti_xml_declaration_a97deab8fd263f70a72369d0214b5c789}} 
+virtual void {\bfseries Print} (F\+I\+LE $\ast$cfile, int depth, T\+I\+X\+M\+L\+\_\+\+S\+T\+R\+I\+NG $\ast$str) const
+\item 
+virtual void \mbox{\hyperlink{class_ti_xml_declaration_ae46cff6565f299210ab945e78bf28514}{Print}} (F\+I\+LE $\ast$cfile, int depth) const
+\item 
+\mbox{\Hypertarget{class_ti_xml_declaration_a12dbb498d45f74fe58cd05dde608a39d}\label{class_ti_xml_declaration_a12dbb498d45f74fe58cd05dde608a39d}} 
+virtual const char $\ast$ {\bfseries Parse} (const char $\ast$p, Ti\+Xml\+Parsing\+Data $\ast$data, Ti\+Xml\+Encoding encoding)
+\item 
+\mbox{\Hypertarget{class_ti_xml_declaration_aab62703b620d9b9391b482dc1835ecf6}\label{class_ti_xml_declaration_aab62703b620d9b9391b482dc1835ecf6}} 
+virtual const \mbox{\hyperlink{class_ti_xml_declaration}{Ti\+Xml\+Declaration}} $\ast$ \mbox{\hyperlink{class_ti_xml_declaration_aab62703b620d9b9391b482dc1835ecf6}{To\+Declaration}} () const
+\begin{DoxyCompactList}\small\item\em Cast to a more defined type. Will return null not of the requested type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ti_xml_declaration_a6bd3d1daddcaeb9543c24bfd090969ce}\label{class_ti_xml_declaration_a6bd3d1daddcaeb9543c24bfd090969ce}} 
+virtual \mbox{\hyperlink{class_ti_xml_declaration}{Ti\+Xml\+Declaration}} $\ast$ \mbox{\hyperlink{class_ti_xml_declaration_a6bd3d1daddcaeb9543c24bfd090969ce}{To\+Declaration}} ()
+\begin{DoxyCompactList}\small\item\em Cast to a more defined type. Will return null not of the requested type. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_ti_xml_declaration_a47aa88aa58952f89719d48b76b2a1b9d}{Accept}} (\mbox{\hyperlink{class_ti_xml_visitor}{Ti\+Xml\+Visitor}} $\ast$visitor) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ti_xml_declaration_a189de17b3e04d4e5b1c385336f214af1}\label{class_ti_xml_declaration_a189de17b3e04d4e5b1c385336f214af1}} 
+void {\bfseries Copy\+To} (\mbox{\hyperlink{class_ti_xml_declaration}{Ti\+Xml\+Declaration}} $\ast$target) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+In correct X\+ML the declaration is the first entry in the file. \begin{DoxyVerb}    <?xml version="1.0" standalone="yes"?>
+\end{DoxyVerb}
+
+
+Tiny\+Xml will happily read or write files without a declaration, however. There are 3 possible attributes to the declaration\+: version, encoding, and standalone.
+
+Note\+: In this version of the code, the attributes are handled as special cases, not generic attributes, simply because there can only be at most 3 and they are always the same. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ti_xml_declaration_a47aa88aa58952f89719d48b76b2a1b9d}\label{class_ti_xml_declaration_a47aa88aa58952f89719d48b76b2a1b9d}} 
+\index{TiXmlDeclaration@{TiXmlDeclaration}!Accept@{Accept}}
+\index{Accept@{Accept}!TiXmlDeclaration@{TiXmlDeclaration}}
+\doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily virtual bool Ti\+Xml\+Declaration\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ti_xml_visitor}{Ti\+Xml\+Visitor}} $\ast$}]{visitor }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Walk the X\+ML tree visiting this node and all of its children. 
+
+Implements \mbox{\hyperlink{class_ti_xml_node_acc0f88b7462c6cb73809d410a4f5bb86}{Ti\+Xml\+Node}}.
+
+\mbox{\Hypertarget{class_ti_xml_declaration_ae46cff6565f299210ab945e78bf28514}\label{class_ti_xml_declaration_ae46cff6565f299210ab945e78bf28514}} 
+\index{TiXmlDeclaration@{TiXmlDeclaration}!Print@{Print}}
+\index{Print@{Print}!TiXmlDeclaration@{TiXmlDeclaration}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily virtual void Ti\+Xml\+Declaration\+::\+Print (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{cfile,  }\item[{int}]{depth }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+All Tiny\+Xml classes can print themselves to a filestream or the string class (\mbox{\hyperlink{class_ti_xml_string}{Ti\+Xml\+String}} in non-\/\+S\+TL mode, std\+::string in S\+TL mode.) Either or both cfile and str can be null.
+
+This is a formatted print, and will insert tabs and newlines.
+
+(For an unformatted stream, use the $<$$<$ operator.) 
+
+Implements \mbox{\hyperlink{class_ti_xml_base_a0de56b3f2ef14c65091a3b916437b512}{Ti\+Xml\+Base}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Classes/\+Headers/\+Util/tinyxml/tinyxml.\+h\end{DoxyCompactItemize}

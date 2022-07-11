@@ -1,0 +1,53 @@
+\hypertarget{class_evt_transition_s_consommation_vers_s_alim_secours}{}\doxysection{Evt\+Transition\+S\+Consommation\+Vers\+S\+Alim\+Secours Class Reference}
+\label{class_evt_transition_s_consommation_vers_s_alim_secours}\index{EvtTransitionSConsommationVersSAlimSecours@{EvtTransitionSConsommationVersSAlimSecours}}
+Inheritance diagram for Evt\+Transition\+S\+Consommation\+Vers\+S\+Alim\+Secours\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_evt_transition_s_consommation_vers_s_alim_secours}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_evt_transition_s_consommation_vers_s_alim_secours_a25df84fdf6b01c233fff7393a5d136aa}\label{class_evt_transition_s_consommation_vers_s_alim_secours_a25df84fdf6b01c233fff7393a5d136aa}} 
+{\bfseries Evt\+Transition\+S\+Consommation\+Vers\+S\+Alim\+Secours} (Graph $\ast$agreg\+Graphe)
+\item 
+const uint \mbox{\hyperlink{class_evt_transition_s_consommation_vers_s_alim_secours_af8126348be09ddfe1535b47225e427df}{on\+Transition\+Event}} (C\+Action $\ast$arg\+Action, C\+Action $\ast$arg\+Action\+Before)
+\begin{DoxyCompactList}\small\item\em Condition de garde entre les états S\+Consommation vers S\+Alim\+Secours. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_evt_transition_s_consommation_vers_s_alim_secours_af8126348be09ddfe1535b47225e427df}\label{class_evt_transition_s_consommation_vers_s_alim_secours_af8126348be09ddfe1535b47225e427df}} 
+\index{EvtTransitionSConsommationVersSAlimSecours@{EvtTransitionSConsommationVersSAlimSecours}!onTransitionEvent@{onTransitionEvent}}
+\index{onTransitionEvent@{onTransitionEvent}!EvtTransitionSConsommationVersSAlimSecours@{EvtTransitionSConsommationVersSAlimSecours}}
+\doxysubsubsection{\texorpdfstring{onTransitionEvent()}{onTransitionEvent()}}
+{\footnotesize\ttfamily const uint Evt\+Transition\+S\+Consommation\+Vers\+S\+Alim\+Secours\+::on\+Transition\+Event (\begin{DoxyParamCaption}\item[{C\+Action $\ast$}]{arg\+Action,  }\item[{C\+Action $\ast$}]{arg\+Action\+Before }\end{DoxyParamCaption})}
+
+
+
+Condition de garde entre les états S\+Consommation vers S\+Alim\+Secours. 
+
+Préconditions \+: L\+U\+X\+M\+E\+T\+R\+E\+\_\+\+P\+I\+N\+G\+\_\+\+I2\+C\+\_\+\+OK \+: Succès du ping I2C du Luxmetre L\+U\+X\+M\+E\+T\+R\+E\+\_\+\+C\+A\+L\+I\+B\+R\+A\+T\+I\+O\+N\+\_\+\+OK \+: Succès de la calibration du luxmetre L\+U\+X\+M\+E\+T\+R\+E\+\_\+\+L\+E\+C\+T\+U\+R\+E\+\_\+\+V\+A\+L\+E\+U\+R\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+OK \+: Succès de la lecture de valeur de la source lumineuse
+
+Postconditions\+:
+
+Invariants \+: Présence de la carte 
+\begin{DoxyParams}{Parameters}
+{\em entrée} & \+: aucun \\
+\hline
+{\em sortie} & \+: aucun \\
+\hline
+{\em entrée/sortie} & \+: arg\+Action \+: contient les méthodes métiers qui gèrent les actions liées à la transition arg\+Action\+Before \+: permet de savoir si l\textquotesingle{}action précédente s\textquotesingle{}est bien passée\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 1} & \+: La condition de garde s\textquotesingle{}est bien passée 100 \+: La précondition a échoué (l\textquotesingle{}état précédent a échoué) C\+O\+N\+S\+O\+M\+M\+A\+T\+I\+O\+N\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+S\+O\+U\+S\+\_\+5\+V\+\_\+\+N\+OK \+: Echec de la lecture de la conso de la carte sous 5V \\
+\hline
+\end{DoxyRetVals}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Classes/\+Headers/\+Transitions/\mbox{\hyperlink{_evt_transition_s_consommation_vers_s_alim_secours_8h}{Evt\+Transition\+S\+Consommation\+Vers\+S\+Alim\+Secours.\+h}}\item 
+Classes/\+Sources/\+Transitions/\mbox{\hyperlink{_evt_transition_s_consommation_vers_s_alim_secours_8cpp}{Evt\+Transition\+S\+Consommation\+Vers\+S\+Alim\+Secours.\+cpp}}\end{DoxyCompactItemize}

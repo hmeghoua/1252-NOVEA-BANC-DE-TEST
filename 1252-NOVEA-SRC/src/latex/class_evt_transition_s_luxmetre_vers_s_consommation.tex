@@ -1,0 +1,53 @@
+\hypertarget{class_evt_transition_s_luxmetre_vers_s_consommation}{}\doxysection{Evt\+Transition\+S\+Luxmetre\+Vers\+S\+Consommation Class Reference}
+\label{class_evt_transition_s_luxmetre_vers_s_consommation}\index{EvtTransitionSLuxmetreVersSConsommation@{EvtTransitionSLuxmetreVersSConsommation}}
+Inheritance diagram for Evt\+Transition\+S\+Luxmetre\+Vers\+S\+Consommation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_evt_transition_s_luxmetre_vers_s_consommation}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_evt_transition_s_luxmetre_vers_s_consommation_a95060031ebf483d0052bc06d2939981d}\label{class_evt_transition_s_luxmetre_vers_s_consommation_a95060031ebf483d0052bc06d2939981d}} 
+{\bfseries Evt\+Transition\+S\+Luxmetre\+Vers\+S\+Consommation} (Graph $\ast$agreg\+Graphe)
+\item 
+const uint \mbox{\hyperlink{class_evt_transition_s_luxmetre_vers_s_consommation_a26598ff7d2d17b0beda8a713fd6c8adf}{on\+Transition\+Event}} (C\+Action $\ast$arg\+Action, C\+Action $\ast$arg\+Action\+Before)
+\begin{DoxyCompactList}\small\item\em Condition de garde entre les états S\+Luxmetre vers S\+Consommation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_evt_transition_s_luxmetre_vers_s_consommation_a26598ff7d2d17b0beda8a713fd6c8adf}\label{class_evt_transition_s_luxmetre_vers_s_consommation_a26598ff7d2d17b0beda8a713fd6c8adf}} 
+\index{EvtTransitionSLuxmetreVersSConsommation@{EvtTransitionSLuxmetreVersSConsommation}!onTransitionEvent@{onTransitionEvent}}
+\index{onTransitionEvent@{onTransitionEvent}!EvtTransitionSLuxmetreVersSConsommation@{EvtTransitionSLuxmetreVersSConsommation}}
+\doxysubsubsection{\texorpdfstring{onTransitionEvent()}{onTransitionEvent()}}
+{\footnotesize\ttfamily const uint Evt\+Transition\+S\+Luxmetre\+Vers\+S\+Consommation\+::on\+Transition\+Event (\begin{DoxyParamCaption}\item[{C\+Action $\ast$}]{arg\+Action,  }\item[{C\+Action $\ast$}]{arg\+Action\+Before }\end{DoxyParamCaption})}
+
+
+
+Condition de garde entre les états S\+Luxmetre vers S\+Consommation. 
+
+Préconditions \+: L\+E\+D\+\_\+\+R\+G\+B\+\_\+\+R\+\_\+\+OK \+: Succès de la lecture de la longueur d\textquotesingle{}onde L\+ED R L\+E\+D\+\_\+\+R\+G\+B\+\_\+\+G\+\_\+\+OK \+: Succès de la lecture de la longueur d\textquotesingle{}onde L\+ED G L\+E\+D\+\_\+\+R\+G\+B\+\_\+\+B\+\_\+\+OK \+: Succès de la lecture de la longueur d\textquotesingle{}onde L\+ED B
+
+Postconditions\+:
+
+Invariants \+: Présence de la carte 
+\begin{DoxyParams}{Parameters}
+{\em entrée} & \+: aucun \\
+\hline
+{\em sortie} & \+: aucun \\
+\hline
+{\em entrée/sortie} & \+: arg\+Action \+: contient les méthodes métiers qui gèrent les actions liées à la transition arg\+Action\+Before \+: permet de savoir si l\textquotesingle{}action précédente s\textquotesingle{}est bien passée\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 1} & \+: La condition de garde s\textquotesingle{}est bien passée 100 \+: La précondition a échoué (l\textquotesingle{}état précédent a échoué) L\+U\+X\+M\+E\+T\+R\+E\+\_\+\+P\+I\+N\+G\+\_\+\+I2\+C\+\_\+\+N\+OK \+: Echec de la lecture de la longueur d\textquotesingle{}onde L\+ED R L\+U\+X\+M\+E\+T\+R\+E\+\_\+\+C\+A\+L\+I\+B\+R\+A\+T\+I\+O\+N\+\_\+\+N\+OK \+: Echec de la lecture de la longueur d\textquotesingle{}onde L\+ED G L\+U\+X\+M\+E\+T\+R\+E\+\_\+\+L\+E\+C\+T\+U\+R\+E\+\_\+\+V\+A\+L\+E\+U\+R\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+N\+OK \+: Echec de la lecture de la longueur d\textquotesingle{}onde L\+ED B \\
+\hline
+\end{DoxyRetVals}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Classes/\+Headers/\+Transitions/\mbox{\hyperlink{_evt_transition_s_luxmetre_vers_s_consommation_8h}{Evt\+Transition\+S\+Luxmetre\+Vers\+S\+Consommation.\+h}}\item 
+Classes/\+Sources/\+Transitions/\mbox{\hyperlink{_evt_transition_s_luxmetre_vers_s_consommation_8cpp}{Evt\+Transition\+S\+Luxmetre\+Vers\+S\+Consommation.\+cpp}}\end{DoxyCompactItemize}

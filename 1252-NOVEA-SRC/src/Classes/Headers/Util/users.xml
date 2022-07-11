@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<lstUsers>
+    <user name="toto" pass="13" indice="1"/>
+    <user name="tata" pass="142" indice="2"/>
+    <user name="titi" pass="azerty" indice="1"/>
+</lstUsers>

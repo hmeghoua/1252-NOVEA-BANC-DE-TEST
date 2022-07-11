@@ -1,0 +1,116 @@
+\hypertarget{class_c_action_mise_en_place_carte}{}\doxysection{C\+Action\+Mise\+En\+Place\+Carte Class Reference}
+\label{class_c_action_mise_en_place_carte}\index{CActionMiseEnPlaceCarte@{CActionMiseEnPlaceCarte}}
+Inheritance diagram for C\+Action\+Mise\+En\+Place\+Carte\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_action_mise_en_place_carte}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint \mbox{\hyperlink{class_c_action_mise_en_place_carte_aa9c78c92ae36c09c28f2b5554492d560}{detecter\+Presence\+Carte}} ()
+\begin{DoxyCompactList}\small\item\em Détection présence de la carte. \end{DoxyCompactList}\item 
+uint \mbox{\hyperlink{class_c_action_mise_en_place_carte_a6b858318cce1272016eff010b8de19e4}{flacher\+Q\+R\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Flash le Q\+R\+Code de la carte. \end{DoxyCompactList}\item 
+uint \mbox{\hyperlink{class_c_action_mise_en_place_carte_a932f45c0161404adf048f8112ff6918b}{alimenter\+Carte\+En\+Cinq\+Volts}} ()
+\begin{DoxyCompactList}\small\item\em Alimente la carte en 5 volts. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_action_mise_en_place_carte_a1606083a9b5649f0bbc89c74a2f635ef}\label{class_c_action_mise_en_place_carte_a1606083a9b5649f0bbc89c74a2f635ef}} 
+uint $\ast$ {\bfseries getm\+\_\+\+S\+T\+A\+TE} ()
+\item 
+\mbox{\Hypertarget{class_c_action_mise_en_place_carte_a4157fafd6a90da9ad78bf45cd3ed95c5}\label{class_c_action_mise_en_place_carte_a4157fafd6a90da9ad78bf45cd3ed95c5}} 
+void {\bfseries setm\+\_\+\+S\+T\+A\+TE} (uint arg\+Rang, uint arg\+New\+Value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_action_mise_en_place_carte_a932f45c0161404adf048f8112ff6918b}\label{class_c_action_mise_en_place_carte_a932f45c0161404adf048f8112ff6918b}} 
+\index{CActionMiseEnPlaceCarte@{CActionMiseEnPlaceCarte}!alimenterCarteEnCinqVolts@{alimenterCarteEnCinqVolts}}
+\index{alimenterCarteEnCinqVolts@{alimenterCarteEnCinqVolts}!CActionMiseEnPlaceCarte@{CActionMiseEnPlaceCarte}}
+\doxysubsubsection{\texorpdfstring{alimenterCarteEnCinqVolts()}{alimenterCarteEnCinqVolts()}}
+{\footnotesize\ttfamily uint C\+Action\+Mise\+En\+Place\+Carte\+::alimenter\+Carte\+En\+Cinq\+Volts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Alimente la carte en 5 volts. 
+
+Préconditions \+:
+
+Postconditions\+:
+
+Invariants \+: Présence de la carte 
+\begin{DoxyParams}{Parameters}
+{\em entrée} & \+: aucun \\
+\hline
+{\em sortie} & \+: aucun \\
+\hline
+{\em entrée/sortie} & \+: aucun \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & L\textquotesingle{}alimentation de la carte en 5 volts est OK 1 L\textquotesingle{}alimentation de la carte en 5 volts est N\+OK -\/1 Erreur de tentative d\textquotesingle{}alimentation de la carte en 5 volts \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_c_action_mise_en_place_carte_aa9c78c92ae36c09c28f2b5554492d560}\label{class_c_action_mise_en_place_carte_aa9c78c92ae36c09c28f2b5554492d560}} 
+\index{CActionMiseEnPlaceCarte@{CActionMiseEnPlaceCarte}!detecterPresenceCarte@{detecterPresenceCarte}}
+\index{detecterPresenceCarte@{detecterPresenceCarte}!CActionMiseEnPlaceCarte@{CActionMiseEnPlaceCarte}}
+\doxysubsubsection{\texorpdfstring{detecterPresenceCarte()}{detecterPresenceCarte()}}
+{\footnotesize\ttfamily uint C\+Action\+Mise\+En\+Place\+Carte\+::detecter\+Presence\+Carte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Détection présence de la carte. 
+
+Préconditions \+:
+
+Postconditions\+:
+
+Invariants \+: 
+\begin{DoxyParams}{Parameters}
+{\em entrée} & \+: aucun \\
+\hline
+{\em sortie} & \+: aucun \\
+\hline
+{\em entrée/sortie} & \+: aucun \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & si La carte est détectée 1 si La carte n\textquotesingle{}est pas détectée -\/1 Erreur de détection de la présence carte \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_c_action_mise_en_place_carte_a6b858318cce1272016eff010b8de19e4}\label{class_c_action_mise_en_place_carte_a6b858318cce1272016eff010b8de19e4}} 
+\index{CActionMiseEnPlaceCarte@{CActionMiseEnPlaceCarte}!flacherQRCode@{flacherQRCode}}
+\index{flacherQRCode@{flacherQRCode}!CActionMiseEnPlaceCarte@{CActionMiseEnPlaceCarte}}
+\doxysubsubsection{\texorpdfstring{flacherQRCode()}{flacherQRCode()}}
+{\footnotesize\ttfamily uint C\+Action\+Mise\+En\+Place\+Carte\+::flacher\+Q\+R\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Flash le Q\+R\+Code de la carte. 
+
+Préconditions \+:
+
+Postconditions\+:
+
+Invariants \+: Présence de la carte 
+\begin{DoxyParams}{Parameters}
+{\em entrée} & \+: aucun \\
+\hline
+{\em sortie} & \+: aucun \\
+\hline
+{\em entrée/sortie} & \+: aucun \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & Le QR Code de la carte est OK 1 Le QR Code de la carte est N\+OK -\/1 Erreur de lecture du QR Code \\
+\hline
+\end{DoxyRetVals}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Classes/\+Headers/\+Actions/\mbox{\hyperlink{_c_action_mise_en_place_carte_8h}{C\+Action\+Mise\+En\+Place\+Carte.\+h}}\item 
+Classes/\+Sources/\+Actions/\mbox{\hyperlink{_c_action_mise_en_place_carte_8cpp}{C\+Action\+Mise\+En\+Place\+Carte.\+cpp}}\end{DoxyCompactItemize}
