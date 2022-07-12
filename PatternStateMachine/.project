@@ -24,11 +24,4 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src</name>
-			<type>2</type>
-			<location>D:/Documents/Developpement/1252-NOVEA-SRC/src/Pattern</location>
-		</link>
-	</linkedResources>
 </projectDescription>
