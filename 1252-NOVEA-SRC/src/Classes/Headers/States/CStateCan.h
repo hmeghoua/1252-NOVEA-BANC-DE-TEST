@@ -66,7 +66,7 @@ private:
 
     	if(getm_transition()->triggered(argAction,argActionBefore)==true){return "StateLora";}
 
-    	else {return "StateLora";}
+    	else {return "testError";}
 
     }
 

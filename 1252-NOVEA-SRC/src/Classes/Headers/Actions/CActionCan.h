@@ -63,7 +63,11 @@ public:
 	uint lectureIdentifiant();
 	uint pingMemoireFlash();
 	uint *getm_STATE(){return m_STATE;}
-	void setm_STATE(uint argRang, uint argNewValue){m_STATE[argRang]=argNewValue;}
+	void setm_STATE(uint argRang, uint argNewValue){
+
+		m_STATE[argRang]=argNewValue;
+		this->m_resultatActionCourante=argNewValue;
+	}
 
 
 };

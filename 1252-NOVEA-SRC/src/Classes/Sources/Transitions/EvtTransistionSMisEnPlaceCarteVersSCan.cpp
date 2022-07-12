@@ -42,9 +42,14 @@
  */
 #include "../../Headers/Global.h"
 #include "../../Headers/Transitions/EvtTransistionSMisEnPlaceCarteVersSCan.h"
-#include "../../Pattern/Headers/Transition.h"
-#include "../../Pattern/Headers/Graph.h"
+//#include "../../Pattern/Headers/Transition.h"
+//#include "../../Pattern/Headers/Graph.h"
 #include "../../Headers/Actions/CActionMiseEnPlaceCarte.h"
+
+#include <Transition.h>
+#include <Graph.h>
+#include <CAction.h>
+
 
 Evt_Transistion_SMisEnPlaceCarte_Vers_SCan::Evt_Transistion_SMisEnPlaceCarte_Vers_SCan()
 	// TODO Auto-generated constructor stub
@@ -90,28 +95,37 @@ const /*string*/uint Evt_Transistion_SMisEnPlaceCarte_Vers_SCan::onTransitionEve
 		invariant=true;
 		//..Et on le retient
 		oMiseEnPlaceCarte->setm_STATE(0, DETECTION_PRESENCE_CARTE_OK);
+
+
+		//argAction->setm_resultatActionCourante(DETECTION_PRESENCE_CARTE_OK);
+	//	cout<<oMiseEnPlaceCarte->getm_resultatActionCourante()<<endl;
 		//Flash du QRCode
 		if(oMiseEnPlaceCarte->flacherQRCode()==0){
 			//Le Flash du QRCode a réussi et le retient
 			oMiseEnPlaceCarte->setm_STATE(1, FLASH_QR_CODE_OK);
+			//oMiseEnPlaceCarte->setm_resultatActionCourante(FLASH_QR_CODE_OK);
 			//Alimentation de la carte en 5 volts
 			if(oMiseEnPlaceCarte->alimenterCarteEnCinqVolts()==0){
 				//L'alimentation de la carte en 5V a réussi et on le retient
 				oMiseEnPlaceCarte->setm_STATE(2, ALIMENTATION_5V_OK);
+				//oMiseEnPlaceCarte->setm_resultatActionCourante(ALIMENTATION_5V_OK);
 
 			}else{
 					oMiseEnPlaceCarte->setm_STATE(2, ALIMENTATION_5V_NOK);
+					//oMiseEnPlaceCarte->setm_resultatActionCourante(ALIMENTATION_5V_NOK);
 					retour=ALIMENTATION_5V_NOK;
 			}
 
 		}else{
 
 			oMiseEnPlaceCarte->setm_STATE(1, FLASH_QR_CODE_NOK);
+		//	oMiseEnPlaceCarte->setm_resultatActionCourante(FLASH_QR_CODE_NOK);
 			retour=FLASH_QR_CODE_NOK;
 		}
 
 	}else{
 			oMiseEnPlaceCarte->setm_STATE(0, DETECTION_PRESENCE_CARTE_NOK);
+			//oMiseEnPlaceCarte->setm_resultatActionCourante(DETECTION_PRESENCE_CARTE_NOK);
 			retour=DETECTION_PRESENCE_CARTE_NOK;
 	}
 

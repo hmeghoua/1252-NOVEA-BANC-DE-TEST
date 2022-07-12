@@ -67,7 +67,7 @@ private:
 
         if(getm_transition()->triggered(argAction,argActionBefore)==true){return "StateAlimSecours";} //StateAlimSecours
 
-            	else {return "StateAlimSecours";}
+            	else {return "testError";}
 
     }
 

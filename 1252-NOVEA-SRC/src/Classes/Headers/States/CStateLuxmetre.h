@@ -69,7 +69,7 @@ private:
 
 
     	  if(getm_transition()->triggered(argAction,argActionBefore)==true){return "StateConsommation";}
-    	  else{return "StateConsommation";}
+    	  else{return "testError";}
 
 
     }

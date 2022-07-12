@@ -67,7 +67,7 @@ private:
 #endif
         if(getm_transition()->triggered(argAction,argActionBefore)==true){return "StateLuxmetre";}
 
-            	else {return "StateLuxmetre";}
+            	else {return "testError";}
 
    }
 

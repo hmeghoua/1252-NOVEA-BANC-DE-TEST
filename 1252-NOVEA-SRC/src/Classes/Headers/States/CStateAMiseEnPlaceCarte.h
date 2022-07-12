@@ -77,10 +77,10 @@ private:
     	}
    		else{
 
-   			return "StateExit";
+   			return "testError";
    		}
 
-    }
+  }
 
     const string onEntry( CAction*argAction){
 

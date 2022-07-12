@@ -53,7 +53,7 @@
 #include "Classes/Headers/Actions/CActionAlimSecours.h"
 
 //Pour générer le rapport de tests
-#include "Classes/Headers/Util/CXml.h"
+//#include "Classes/Headers/Util/CXml.h"
 
 
 //using namespace std;
@@ -112,6 +112,7 @@ int main()
 
     //Lancement du graphe
     graph.StartGraph();
+
 
 #ifdef TEST_GRAPHE
     cout <<"end";

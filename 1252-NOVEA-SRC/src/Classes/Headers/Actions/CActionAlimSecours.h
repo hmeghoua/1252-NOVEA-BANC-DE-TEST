@@ -57,7 +57,11 @@ public:
 	uint alimenterCarteEn30V();
 	uint mesurerHausseAlimentation();
 	uint *getm_STATE(){return m_STATE;}
-	void setm_STATE(uint argRang, uint argNewValue){m_STATE[argRang]=argNewValue;}
+	void setm_STATE(uint argRang, uint argNewValue){
+
+		m_STATE[argRang]=argNewValue;
+		this->m_resultatActionCourante=argNewValue;
+	}
 };
 
 #endif /* CLASSES_HEADERS_ACTIONS_CACTIONALIMSECOURS_H_ */

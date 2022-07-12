@@ -70,7 +70,7 @@ private:
 
         if(getm_transition()->triggered(argAction,argActionBefore)==true){return "StateLedRGB";}
 
-            	else {return "StateLedRGB";}
+            	else {return "testError";}
 
 
     }

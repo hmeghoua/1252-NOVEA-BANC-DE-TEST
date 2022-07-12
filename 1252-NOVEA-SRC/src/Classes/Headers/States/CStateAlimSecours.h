@@ -70,7 +70,7 @@ private:
 
     	if(getm_transition()->triggered(argAction,argActionBefore)==true){return "StateLastState";}
 
-        	else{return "StateLastState";}
+        	else{return "testError";}
         /*return "StateAlimSecours";*/
 
     }

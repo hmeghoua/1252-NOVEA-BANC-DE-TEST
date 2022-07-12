@@ -68,7 +68,7 @@ private:
 
     	if(getm_transition()->triggered(argAction,argActionBefore)==true){return "StateAccelerometre";}
 
-    	    	else{return "StateExit";}
+    	    	else{return "testError";}
 
 
     }

@@ -45,9 +45,9 @@
 
 
 #include "../../Headers/Global.h"
-#include "../../Pattern/Headers/Transition.h"
-#include "../../Pattern/Headers/Graph.h"
 #include "../../Headers/Actions/CActionCan.h"
+
+
 
 
 
