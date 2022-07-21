@@ -42,8 +42,18 @@
 #ifndef CACTION_H_
 #define CACTION_H_
 
-class  CAction {
+class CAction {
+
+protected:
+
+	unsigned short int m_resultatActionCourante;
+
+
 public:
+
+	unsigned short int getm_resultatActionCourante(){return m_resultatActionCourante;}
+	void setm_resultatActionCourante(unsigned short int ArgNewValue){m_resultatActionCourante=ArgNewValue;}
+
 	CAction();
 	virtual ~CAction();
 };

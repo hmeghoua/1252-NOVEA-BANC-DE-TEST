@@ -44,6 +44,8 @@
 CAction::CAction() {
 	// TODO Auto-generated constructor stub
 
+	 m_resultatActionCourante=0;
+
 }
 
 CAction::~CAction() {
