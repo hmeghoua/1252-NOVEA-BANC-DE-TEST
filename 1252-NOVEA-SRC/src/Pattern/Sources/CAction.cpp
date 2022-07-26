@@ -4,7 +4,7 @@
  * @date          Created on: 20 juin 2022
  * @author        H. MEGHOUACHE
  * @brief         Copyright Emkaelectronique
- * @details       à compléter
+ * @details       ï¿½ complï¿½ter
  *
  *
  * @verbatim
@@ -14,7 +14,7 @@
  * 
  *        (#) Client    : NOVEA
  *        (#) Projet    : BANC DE TEST NOVCOM Z
- *        (#) Référence : BC 1252 002 000 800
+ *        (#) Rï¿½fï¿½rence : BC 1252 002 000 800
  * ===================================================================
  *                 ##### Cible, compilateur et IDE #####
  * ===================================================================

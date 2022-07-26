@@ -4,7 +4,7 @@
  * @date          Created on: 16 juin 2022
  * @author        hme
  * @brief         Copyright emkaelectronique
- * @details       à compléter
+ * @details       ï¿½ complï¿½ter
  *
  *
 * @verbatim
@@ -14,7 +14,7 @@
 * 
 *        (#) Client    : NOVEA
 *        (#) Projet    : BANC DE TEST NOVCOM Z
-*        (#) Référence : BC 1252 002 000 800
+*        (#) Rï¿½fï¿½rence : BC 1252 002 000 800
 * ===================================================================
 *                 ##### Cible, compilateur et IDE #####
 * ===================================================================
@@ -51,8 +51,8 @@
 //CStdString fluxDeSortie/*=new CStdString*/ ;
 
 
-//TEST_GRAPHE : On vérifie que l"on passe dans tous les ETATS
-//DEBUG_PC : On entre dans chaque état pour vérifier les actions réalisées
+//TEST_GRAPHE : On vï¿½rifie que l"on passe dans tous les ETATS
+//DEBUG_PC : On entre dans chaque ï¿½tat pour vï¿½rifier les actions rï¿½alisï¿½es
 
 //#ifdef DEBUG_PC
 
@@ -175,33 +175,33 @@ string LcdToPrint[57]={
 		"T15 ACCE OK",
 		"T16 ACCE FAB OK",
 		"T16 ACCE FAB NOK",
-		"T17 ACCE FAB OK",
-		"T17 ACCE FAB NOK",
-		"T18 ACCE INT OK",
-		"T18 ACCE INT NOK",
+		//"T17 ACCE FAB OK",
+		//"T17 ACCE FAB NOK",
+		"T17 ACCE INT OK",
+		"T17 ACCE INT NOK",
 
 
-		"T19 LED R OK",//38
-		"T19 LED R NOK",
-		"T20 LED G OK",
-		"T20 LED G NOK",
-		"T21 LED B OK",
-		"T21 LED B NOK",
+		"T18 LED R OK",//38
+		"T18 LED R NOK",
+		"T19 LED G OK",
+		"T19 LED G NOK",
+		"T20 LED B OK",
+		"T20 LED B NOK",
 
-		"T22 LUX OK",//44
-		"T22 LUX NOK",
-		"T23 CAL OK",
-		"T23 CAL NOK",
-		"T24 CAL OK",
-		"T24 CAL NOK",
+		"T21 LUX OK",//44
+		"T21 LUX NOK",
+		"T22 CAL OK",
+		"T22 CAL NOK",
+		//"T23 CAL OK",
+		//"T23 CAL NOK",
 
-		"T25 CONS 5V OK",//50
-		"T25 CONS 5V NOK",
+		"T23 CONS 5V OK",//50
+		"T23 CONS 5V NOK",
 
-		"T26 SEC 30V OK",//52
-		"T26 SEC 30V NOK",
-		"T26 HAUSSE OK",
-		"T26 HAUSSE NOK"
+		"T24 SEC 30V OK",//52
+		"T24 SEC 30V NOK",
+		"T25 HAUSSE OK",
+		"T25 HAUSSE NOK"
 
 };
 

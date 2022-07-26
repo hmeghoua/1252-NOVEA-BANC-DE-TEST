@@ -4,7 +4,7 @@
  * @date          Created on: 16 juin 2022
  * @author        hme
  * @brief         Copyright emkaelectronique
- * @details       à compléter
+ * @details       ï¿½ complï¿½ter
  *
  *
  * @verbatim
@@ -14,7 +14,7 @@
  * 
  *        (#) Client    : NOVEA
  *        (#) Projet    : BANC DE TEST NOVCOM Z
- *        (#) Référence : BC 1252 002 000 800
+ *        (#) Rï¿½fï¿½rence : BC 1252 002 000 800
  * ===================================================================
  *                 ##### Cible, compilateur et IDE #####
  * ===================================================================
@@ -58,17 +58,17 @@ Evt_Transistion_SMisEnPlaceCarte_Vers_SCan::Evt_Transistion_SMisEnPlaceCarte_Ver
 }
 
 /**
-  * @brief  Condition de garde entre les états SMisEnPlaceCarte et SCan
-  * @brief  Préconditions :
+  * @brief  Condition de garde entre les ï¿½tats SMisEnPlaceCarte et SCan
+  * @brief  Prï¿½conditions :
   * @brief  Postconditions: FLASH_QR_CODE_OK            :  Le QR Code est OK
   *                         ALIMENTATION_5V_OK          :  L'alimentation de la carte en 5V est OK
-  * @brief  Invariants    : DETECTION_PRESENCE_CARTE_OK :  La carte à tester est toujours présente
-  * @param  entrée        : aucun
+  * @brief  Invariants    : DETECTION_PRESENCE_CARTE_OK :  La carte ï¿½ tester est toujours prï¿½sente
+  * @param  entrï¿½e        : aucun
   * @param  sortie        : aucun
-  * @param  entrée/sortie : argAction                    : contient les méthodes métiers qui gèrent la transition
-  * @retval  1                                           : La condition de garde s'est bien passée
+  * @param  entrï¿½e/sortie : argAction                    : contient les mï¿½thodes mï¿½tiers qui gï¿½rent la transition
+  * @retval  1                                           : La condition de garde s'est bien passï¿½e
   *          100                                         : Echec de la transition
-  *          DETECTION_PRESENCE_CARTE_NOK                : Invariant pas vérifié : absence de carte
+  *          DETECTION_PRESENCE_CARTE_NOK                : Invariant pas vï¿½rifiï¿½ : absence de carte
   *          FLASH_QR_CODE_NOK                           : Echec de lecture du QR Code
   *          ALIMENTATION_5V_NOK                         : Echec de l'alimentation de la carte en 5 volts
   */
@@ -79,34 +79,34 @@ const /*string*/uint Evt_Transistion_SMisEnPlaceCarte_Vers_SCan::onTransitionEve
 	uint retour=100; 	     //Echec de la condition de garde de la transition par defaut
 	bool invariant=false;                //Echec de l'invariant par defaut
 
-	//L'objet "oMiseEnPlaceCarte" pour réaliser les actions prévues dans l'état SMisEnPlaceCarte
+	//L'objet "oMiseEnPlaceCarte" pour rï¿½aliser les actions prï¿½vues dans l'ï¿½tat SMisEnPlaceCarte
 	CActionMiseEnPlaceCarte* oMiseEnPlaceCarte=(CActionMiseEnPlaceCarte*)argAction;
 
 #ifdef DEBUG_PC
 	cout<<"Je suis dans la transition de SMisEnPlaceCarte vers SCan"<<endl;
 #endif
 
-	//On réalise les actions associées à l'état "Scan"
-    //Mais avant, on teste si il y a bien une carte présente
+	//On rï¿½alise les actions associï¿½es ï¿½ l'ï¿½tat "Scan"
+    //Mais avant, on teste si il y a bien une carte prï¿½sente
 	//On teste l'invariant
 	if(oMiseEnPlaceCarte->detecterPresenceCarte()==0){
 
-		//L'invariant est vérifié : on positionne la valeur de retour..
+		//L'invariant est vï¿½rifiï¿½ : on positionne la valeur de retour..
 		invariant=true;
 		//..Et on le retient
 		oMiseEnPlaceCarte->setm_STATE(0, DETECTION_PRESENCE_CARTE_OK);
-
+		//oMiseEnPlaceCarte->setm_STATE_MEMOIRE(DETECTION_PRESENCE_CARTE_OK, DETECTION_PRESENCE_CARTE_OK);
 
 		//argAction->setm_resultatActionCourante(DETECTION_PRESENCE_CARTE_OK);
 	//	cout<<oMiseEnPlaceCarte->getm_resultatActionCourante()<<endl;
 		//Flash du QRCode
 		if(oMiseEnPlaceCarte->flacherQRCode()==0){
-			//Le Flash du QRCode a réussi et le retient
+			//Le Flash du QRCode a rï¿½ussi et le retient
 			oMiseEnPlaceCarte->setm_STATE(1, FLASH_QR_CODE_OK);
 			//oMiseEnPlaceCarte->setm_resultatActionCourante(FLASH_QR_CODE_OK);
 			//Alimentation de la carte en 5 volts
 			if(oMiseEnPlaceCarte->alimenterCarteEnCinqVolts()==0){
-				//L'alimentation de la carte en 5V a réussi et on le retient
+				//L'alimentation de la carte en 5V a rï¿½ussi et on le retient
 				oMiseEnPlaceCarte->setm_STATE(2, ALIMENTATION_5V_OK);
 				//oMiseEnPlaceCarte->setm_resultatActionCourante(ALIMENTATION_5V_OK);
 
@@ -132,13 +132,13 @@ const /*string*/uint Evt_Transistion_SMisEnPlaceCarte_Vers_SCan::onTransitionEve
 
 
 #ifdef DEBUG_PC
-	cout<<"Transition de transition de SMisEnPlaceCarte vers SCan réussie"<<endl;
+	cout<<"Transition de transition de SMisEnPlaceCarte vers SCan rï¿½ussie"<<endl;
 	cout<<"****************************************************************"<<endl;
 	cout<<endl;
 #endif
 
-	 	 //On construit le retour de la méthode : invariant résussi et dernière action
-	     //"alimenterCarteEnCinqVolts" réussie
+	 	 //On construit le retour de la mï¿½thode : invariant rï¿½sussi et derniï¿½re action
+	     //"alimenterCarteEnCinqVolts" rï¿½ussie
 		 if((invariant)&&((*(oMiseEnPlaceCarte->getm_STATE()+2))==ALIMENTATION_5V_OK)){
 
 			 //Tout est OK
@@ -152,7 +152,7 @@ const /*string*/uint Evt_Transistion_SMisEnPlaceCarte_Vers_SCan::onTransitionEve
 
 			 }else{
 
-				 	 	 //La dernière action a échoué
+				 	 	 //La derniï¿½re action a ï¿½chouï¿½
 				 	 	 retour=ALIMENTATION_5V_NOK;
 			 }
 		 }

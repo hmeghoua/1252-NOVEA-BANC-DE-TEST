@@ -4,7 +4,7 @@
  * @date          Created on: 16 juin 2022
  * @author        hme
  * @brief         Copyright emkaelectronique
- * @details       à compléter
+ * @details       ï¿½ complï¿½ter
  *
  *
  * @verbatim
@@ -14,7 +14,7 @@
  * 
  *        (#) Client    : NOVEA
  *        (#) Projet    : BANC DE TEST NOVCOM Z
- *        (#) Référence : BC 1252 002 000 800
+ *        (#) Rï¿½fï¿½rence : BC 1252 002 000 800
  * ===================================================================
  *                 ##### Cible, compilateur et IDE #####
  * ===================================================================
@@ -48,6 +48,8 @@
 #include "CAction.h"
 #include "Transition.h"
 #include "Util/CScreen.h"
+#include "Util/CFichierCSV.h"
+#include "../../Classes/Headers/UserCases/CCasUserEnregistrerLogsDeTest.h"
 #include <iostream>
 #include <map>
 #include <string>
@@ -83,6 +85,7 @@ private:
     CAction * currentAction_,*currentActionBefore_;
     string nextState_;
     CScreen *lcd_;
+    CCasUserEnregistrerLogsDeTest *m_CCasUserEnregistrerLogsDeTest;
 
 };
 

@@ -6,7 +6,7 @@
  * @brief         Copyright   : EMKA ELECTRONIQUE.
  *
  * @details       Programme du Banc de test
- * @details       Remarque : inclure la bibliothèque "libPatternStateMachine"
+ * @details       Remarque : inclure la bibliothï¿½que "libPatternStateMachine"
  *
  */
 #include "Classes/Headers/Global.h"
@@ -17,7 +17,7 @@
 #include <Transition.h>
 #include <CStateBanc.h>
 #include <CAction.h>
-//Les transitions qui gèrent les conditions de garde
+//Les transitions qui gï¿½rent les conditions de garde
 #include "Classes/Headers/Transitions/EvtTransistionSMisEnPlaceCarteVersSCan.h"
 #include "Classes/Headers/Transitions/EvtTransitionSCanVersSLora.h"
 #include "Classes/Headers/Transitions/EvtTransitionSLoraVersSBluetooth.h"
@@ -30,7 +30,7 @@
 #include "Classes/Headers/Transitions/EvtTransitionSAlimSecoursVersLastState.h"
 
 
-//Les états
+//Les ï¿½tats
 #include "Classes/Headers/States/CStateAMiseEnPlaceCarte.h"
 #include "Classes/Headers/States/CStateCan.h"
 #include "Classes/Headers/States/CStateLora.h"
@@ -41,7 +41,7 @@
 #include "Classes/Headers/States/CStateConsommation.h"
 #include "Classes/Headers/States/CStateAlimSecours.h"
 
-//Les actions associées à chaque état
+//Les actions associï¿½es ï¿½ chaque ï¿½tat
 #include "Classes/Headers/Actions/CActionMiseEnPlaceCarte.h"
 #include "Classes/Headers/Actions/CActionCan.h"
 #include "Classes/Headers/Actions/CActionLora.h"
@@ -52,7 +52,7 @@
 #include "Classes/Headers/Actions/CActionConsommation.h"
 #include "Classes/Headers/Actions/CActionAlimSecours.h"
 
-//Pour générer le rapport de tests
+//Pour gï¿½nï¿½rer le rapport de tests
 //#include "Classes/Headers/Util/CXml.h"
 
 
@@ -63,7 +63,7 @@
 int main()
 {
 
-     map<string, CStateBanc*> listeEtats;
+    map<string, CStateBanc*> listeEtats;
     map<string,Transition*> listeTransitions;
     map<string,CAction*> listeDesActions;
 
@@ -79,7 +79,7 @@ int main()
     listeDesActions["StateAlimSecours"]=new CActionAlimSecours;
 
 
-    //Liste des états du banc de test
+    //Liste des ï¿½tats du banc de test
     listeEtats["StateAMiseEnPlaceCarte"] = new CStateAMiseEnPlaceCarte;
     listeEtats["StateCan"]=new CStateCan;
     listeEtats["StateLora"] = new CStateLora;
@@ -107,7 +107,7 @@ int main()
 
 
 
-    //Construction du graphe
+    //On informe le graphe des transitions
      graph.setListeTransitions(listeTransitions);
 
     //Lancement du graphe

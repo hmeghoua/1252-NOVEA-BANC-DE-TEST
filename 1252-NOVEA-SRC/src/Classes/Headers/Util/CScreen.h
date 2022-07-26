@@ -1,10 +1,10 @@
 /**
- * @file          CAction.h
+ * @file          CScreen.h
  * @version       1.0
- * @date          Created on: 20 juin 2022
+ * @date          Created on: 23 juin 2022
  * @author        H. MEGHOUACHE
  * @brief         Copyright Emkaelectronique
- * @details       ï¿½ complï¿½ter
+ * @details       à compléter
  *
  *
  * @verbatim
@@ -14,7 +14,7 @@
  * 
  *        (#) Client    : NOVEA
  *        (#) Projet    : BANC DE TEST NOVCOM Z
- *        (#) Rï¿½fï¿½rence : BC 1252 002 000 800
+ *        (#) Référence : BC 1252 002 000 800
  * ===================================================================
  *                 ##### Cible, compilateur et IDE #####
  * ===================================================================
@@ -28,7 +28,7 @@
  * ===================================================================
  * 
  *        (#) Version   | Date           | Auteur              | Nature de la modification
- *            1.00        20 juin 2022         H. MEGHOUACHE         Creation
+ *            1.00        23 juin 2022         H. MEGHOUACHE         Creation
  *
  * @endverbatim
  *
@@ -39,31 +39,59 @@
  *******************************************************************************
  *
  */
-#ifndef CACTION_H_
-#define CACTION_H_
+#ifndef HEADERS_UTIL_CSCREEN_H_
+#define HEADERS_UTIL_CSCREEN_H_
 
-class CAction {
+#include <iostream>
+#include <string>
 
-protected:
+using namespace std;
 
-	unsigned short int m_resultatActionCourante;
-	unsigned short int m_STATE_MEMOIRE[60];
 
+class CScreen
+{
+private:
+
+	int m_a;
+	int m_b;
 
 public:
 
-	unsigned short int getm_resultatActionCourante(){return m_resultatActionCourante;}
-	void setm_resultatActionCourante(unsigned short int ArgNewValue){m_resultatActionCourante=ArgNewValue;}
-	void setm_STATE_MEMOIRE(unsigned short int ArgIndice,unsigned short int ArgNewValue){
 
-		m_STATE_MEMOIRE[ArgIndice]=ArgNewValue;
-	}
+	CScreen();
+	virtual ~CScreen();
+    bool print(const char * argString,unsigned short int argSize,unsigned short int argPosRow,unsigned short int argPosColumn){
 
-	unsigned short int*getm_STATE_MEMOIRE(){return m_STATE_MEMOIRE;}
+    	bool res=this->write(argString, argSize,argPosRow, argPosColumn);
+
+    	return res;
+
+    }
 
 
-	CAction();
-	virtual ~CAction();
+
+private:
+
+     bool write(const char * argString,unsigned short int argSize,unsigned short int argPosRow,unsigned short int argPosColumn){
+
+    	 	 cout<<"Affichage LCD : ";
+    	 	 for(int i=0;i<argSize;i++){
+
+
+    	 		 	 cout<<argString[i];
+
+    	 	 }
+
+    	 	 cout<<endl;
+
+    	 	 return 0;
+
+
+     }
+	 //virtual  bool write(ostream& os,/*const*/ CScreen& dt)=0;
+
 };
 
-#endif /* CACTION_H_ */
+
+
+#endif /* HEADERS_UTIL_CSCREEN_H_ */

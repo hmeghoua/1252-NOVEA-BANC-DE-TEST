@@ -4,7 +4,7 @@
  * @date          Created on: 16 juin 2022
  * @author        hme
  * @brief         Copyright emkaelectronique
- * @details       à compléter
+ * @details       ï¿½ complï¿½ter
  *
  *
  * @verbatim
@@ -14,7 +14,7 @@
  * 
  *        (#) Client    : NOVEA
  *        (#) Projet    : BANC DE TEST NOVCOM Z
- *        (#) Référence : BC 1252 002 000 800
+ *        (#) Rï¿½fï¿½rence : BC 1252 002 000 800
  * ===================================================================
  *                 ##### Cible, compilateur et IDE #####
  * ===================================================================
@@ -41,18 +41,20 @@
  *
  */
 #include "../Headers/Graph.h"
+#include "Util/CScreen.h"
 
 Graph::Graph(map<string, CStateBanc*> argListeEtat, map<string,CAction*> argListeActions) {
 	// TODO Auto-generated constructor stub
 
 	states_=argListeEtat;
 	listeDesActions_=argListeActions;
-	//Premier état du graphe à exécuter
+	//Premier ï¿½tat du graphe ï¿½ exï¿½cuter
 	nextState_="StateAMiseEnPlaceCarte";
 	//Pas d'action avant
 	currentActionBefore_=NULL;
-	//Pour l'affichage sur l'écran LCD
+	//Pour l'affichage sur l'ï¿½cran LCD
 	lcd_=new CScreen();
+	m_CCasUserEnregistrerLogsDeTest=new CCasUserEnregistrerLogsDeTest();
 
 }
 
@@ -60,43 +62,71 @@ Graph::~Graph() {
 	// TODO Auto-generated destructor stub
 
 	delete lcd_;
+	delete m_CCasUserEnregistrerLogsDeTest;
 }
 
 void Graph::StartGraph(){
 
-
+	unsigned short int memIndice=2;
+	m_CCasUserEnregistrerLogsDeTest->construireFichierCSV();
 	      do {
 #ifdef DEBUG_PC
 					cout<<"Etat suivant  : "<<nextState_<<endl;
 #endif
 
+
+
 					currentActionBefore_=currentAction_;
 
-					/*On traite l'état courant*/
+					/*On traite l'ï¿½tat courant*/
 					currentState_ = states_[nextState_];
 					/*On lui affecte sa transition*/
 					currentTransition_=transitions_[nextState_];
 					currentState_->SetTransition(currentTransition_);
-					/*On lui dit quelle action est associée*/
+					/*On lui dit quelle action est associï¿½e*/
 					currentAction_=listeDesActions_[nextState_];
-					/*On exécute l'état courant*/
+					/*On exï¿½cute l'ï¿½tat courant*/
 					string entry=currentState_->Entry(currentAction_);
-					/*nextState contient l'état qui sera exécuté*/
+					/*nextState contient l'ï¿½tat qui sera exï¿½cutï¿½*/
 					nextState_ = currentState_->Action(currentAction_,currentActionBefore_);
 					string exit = currentState_->Exit(currentAction_);
+					unsigned short int indice=currentAction_->getm_resultatActionCourante();
+					//Si le test a ï¿½chouï¿½ on affiche l'erreur sur l'ï¿½cran LCD
 
-					//Si le test a échoué on affiche l'erreur sur l'écran LCD
+
 					if(nextState_.compare("testError")==0){
 
-						unsigned short int indice=currentAction_->getm_resultatActionCourante();
 						lcd_->print(LcdToPrint[indice].c_str(),LcdToPrint[indice].size(), 0, 0);
+
 					}else{
 
-						string test="Test en cours";
-						lcd_->print(test.c_str(),test.size(), 0, 0);
+
+
+						string s=LcdToPrint[memIndice].c_str();
+						s+=";";
+						lcd_->print(s.c_str(),s.size(), 0, 0);
+						m_CCasUserEnregistrerLogsDeTest->mettreAJourFichierCSV(s);
+						memIndice=memIndice+2;
+
+						while(memIndice<indice){
+
+							s=LcdToPrint[memIndice].c_str();
+							s+=";";
+							lcd_->print(s.c_str(),s.size(), 0, 0);
+							m_CCasUserEnregistrerLogsDeTest->mettreAJourFichierCSV(s);
+							memIndice=memIndice+2;
+
+						}
+
+						s=LcdToPrint[memIndice].c_str();
+						s+=";";
+						lcd_->print(s.c_str(),s.size(), 0, 0);
+						m_CCasUserEnregistrerLogsDeTest->mettreAJourFichierCSV(s);
+						memIndice=memIndice+2;
 
 					}
 
+					//memIndice=indice;
 
 	       }while(nextState_!="StateLastState");
 
